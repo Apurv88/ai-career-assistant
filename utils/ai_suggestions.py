@@ -1,10 +1,12 @@
 import requests
+import os
 
 # API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
+HF_TOKEN = os.getenv("HF_TOKEN")
 
-HEADERS = {
-    "Authorization": "Bearer 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"
+headers = {
+    "Authorization": f"Bearer {HF_TOKEN}"
 }
 
 

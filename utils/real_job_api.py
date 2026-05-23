@@ -1,7 +1,10 @@
 import requests
+import os
+APP_ID = os.getenv("APP_ID")
+APP_KEY = os.getenv("APP_KEY")
 
-APP_ID = "f9d46aec"
-APP_KEY = "d929fd7cefd910a0aea4b2c7bf1d7498"
+#APP_ID = "f9d46aec"
+#APP_KEY = "d929fd7cefd910a0aea4b2c7bf1d7498"
 
 
 def fetch_real_jobs(role):
