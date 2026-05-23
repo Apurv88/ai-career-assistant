@@ -34,7 +34,7 @@ function App() {
       // Resume Analysis
       const response = await axios.post(
 
-        "http://127.0.0.1:8000/analyze",
+        "https://ai-career-assistant-mudy.onrender.com/analyze",
 
         formData
       )
@@ -45,7 +45,7 @@ function App() {
       // Recommended Jobs
       const jobsResponse = await axios.post(
 
-        "http://127.0.0.1:8000/recommend-jobs",
+        "https://ai-career-assistant-mudy.onrender.com/recommend-jobs",
 
         formData
       )
